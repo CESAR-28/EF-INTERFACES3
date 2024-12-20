@@ -20,4 +20,8 @@ export class DashboardComponent {
     this.router.navigate(["home"],  {relativeTo: this.route})
   }
 
+  logout(){
+    this.authService.logout()
+    this.router.navigate(["login"])
+  }
 }
